@@ -15,7 +15,7 @@ export default function Header({ sidebarOpen, setSidebarOpen }) {
 
         {/* Logo / Title */}
         <span className="font-bold text-lg text-slate-800">
-          BKK Admin
+          Attendance
         </span>
       </div>
 

@@ -146,18 +146,22 @@ export default function Scane() {
                         )}
                     </div>
 
-                    <button
-                        onClick={generateQR}
-                        className="px-4 py-2 bg-amber-500 text-white rounded-lg"
-                    >
-                        Generate QR Dummy
-                    </button>
+                 <div className="flex flex-col items-center mt-4 space-y-4">
+  <button
+    onClick={generateQR}
+    className="px-4 py-2 bg-amber-500 text-white rounded-lg"
+  >
+    Generate QR Dummy
+  </button>
 
-                    {generatedQR && (
-                        <div className="mt-4">
-                            <img src={generatedQR} alt="QR" className="w-40 h-40" />
-                        </div>
-                    )}
+  {generatedQR && (
+    <img
+      src={generatedQR}
+      alt="QR"
+      className="w-40 h-40"
+    />
+  )}
+</div>
                 </div>
 
                 {/* SIDEBAR INFO */}
